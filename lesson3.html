@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPND Lesson 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <h1>Lesson 3: Adding CSS Style and HTML Structure</h1>
+      <div class="content">
+        <h2>CSS Styling</h2>
+        <p>A typical CSS syntax looks like this: <b>selector {property: value;}</b><br>
+          A <b>selector</b> can be an HTML element, or a particular chosen part of the document, called a <b>class</b>.
+          A class name will have a dot in front of it, like this: .classname<br>
+          The part of the syntax in the curly braces is called a <b>declaration</b>. It has a <b>property</b>, which is
+          a particular style attribute, such as a color or a size, and a <b>value</b> for that attribute.
+        </p>
+         There are three ways to add CSS styling to an HTML page:<br>
+         <ol>
+           <li>Write CSS code in the head element of HTML. The element &lt;style&gt; is used.</li>
+           <li>Link to a separate CSS file. Within the head element of the HTML is a link to the file,
+           which will have this structure: <b>&lt;link rel="stylesheet" href="style.css"&gt;</b></li>
+           <li>Write CSS inline within the HTML document within the &lt;div&gt; tags. This is not advised because it would result 
+           in repetitive coding, which could potentially cause problems when editing, and is generally a waste of time.</li>
+         </ol> 
+      </div>
+      <div class="content">
+        <h2>Box Sizing and Positioning</h2>
+        <p>
+          HTML elements are boxes with 4 components: margin, border, padding, and content. To better control the sizing
+          of a box, use percentages instead of pixels, and use <b>box-sizing: border-box</b>. You can also specify properties
+          for specific browsers by using the prefixes -moz (Firefox), -ms (Internet Explorer), or -webkit (other browsers).
+        </p>
+        <p>
+          &lt;div&gt; is a block element, which by default, takes up the whole width of a page. Using
+          <b>display: flex;</b> allows &lt;div&gt; elements to display side by side.
+        </p>
+      </div>
+      <div class="content">
+        <h2>Code, Test, Refine</h2>
+          Generally, create a page based on a design as follows:
+          <ol>
+            <li>Look for natural boxes (groupings)</li>
+            <li>Look for repeated styles and semantic elements</li>
+            <li>Write the HTML</li>
+            <li>Apply CSS styles</li>
+            <li>Repeat steps 3 and 4 until the page looks like the design.</li>
+          </ol>
+      </div>
+      <div class="navigation">
+      <h4><a href="lesson1.html">Lesson 1</a></h4>
+      <h4><a href="lesson2.html">Lesson 2</a></h4>
+      <h4><a href="tableofcontents.html">Table of Contents</a></h4>
+      </div>
+</body>
+</html>

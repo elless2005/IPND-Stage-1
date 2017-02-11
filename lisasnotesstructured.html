@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lisa's Notes for the Intro to Programming Nanodegree</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Lesson 1: Getting Started with HTML</h1>
+    <div class="content">
+    <h2>World Wide Web Summary</h2>
+    <p>The World Wide Web (WWW) is a collection of documents that use <b>Hypertext Markup Language </b>(HTML).
+      Webpages are connected by <b>hyperlinks</b> (links).
+    Files can be found on the web include <em>HTML, plain text, images, videos,</em> and <em>music.</em>
+    </p>
+    <p>A web browser on a computer (such as Internet Explorer) sends a request to servers through the Internet,
+      using <b>Hypertext Transfer Protocol</b> (HTTP),
+    and the servers respond by sending files that can be viewed or played by the browser.</p>
+    </div>
+    <div class="content">
+    <h2>HTML</h2>
+      <h3>Basic Components</h3>
+      <p>HTML is made up of:<br>
+      <ul>
+        <li>Text content</li>
+        <li>Markup (formatting of the content)</li>
+        <li>References to other documents, such as images</li>
+        <li>Links to other pages</li>
+      </ul>
+      </div>
+      <div class="content">
+      <h3>Tags</h3>
+      <p>HTML markup uses tags, which are typically structured as <b>&lt;tagname&gt;content&lt;/tagname&gt;</b>.
+        The first tag is called an "opening tag,"
+      the second tag (with the slash) is called a "closing tag." The entire structure is called an element.
+      </p>
+      <!-- I used information from http://www.w3schools.com/charsets/ref_utf_punctuation.asp for displaying the angle brackets. -->
+      <p>Examples of tags with this structure are &lt;b&gt;<b>bold</b>&lt;/b&gt; and
+        &lt;em&gt;<em>emphasis (italic)</em>&lt;/em&gt;
+      </p>
+      <p>Tags can also have <b>attributes</b>, which equal some kind of value. The structure of a tag with an attribute is
+      <b>&lt;tagname attribute="value"&gt;content&lt;/tagname&gt;</b>
+      An example of a tag with an attribute is the <b>anchor tag</b> &lt;a&gt;,
+      which is used to create links. A tag like this one<br>
+      &lt;a href="http://www.ledorestaurant.com/"&gt;Pizza for lunch!&lt;/a&gt;
+      would display like this in the browser:<br>
+      <a href="http://www.ledorestaurant.com/">Pizza for lunch!</a>
+      </p>
+      <p>An <b>image tag</b> is an example of a <b>void tag</b>, in which the tag contains no content,
+        and thus does not need a closing tag.
+      An image tag also contains two attributes: src, whose value is the link to the image,
+      and alt, whose value is text that describes the image for
+      <a href="https://www.hhs.gov/web/section-508">Section 508 compliance</a>.
+      This tag &lt;img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Copo_de_nieve.png" alt="snowflake"&gt;
+      would display like this:<br>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Copo_de_nieve.png" alt="snowflake" height="50" width="50">
+      </p>
+      <!-- I shrunk the image to make it fit better on the page -->
+      <p>There are a number of tags that can group and format content:<br>
+        <ul>
+          <li>&lt;br&gt; break</li>
+          <li>&lt;p&gt; paragraph</li>
+          <li>&lt;span&gt; span</li>
+          <li>&lt;div&gt; div</li>
+        </ul>
+        <p>These tags all contain content, and therefore use closing tags.
+        &lt;br&gt; and &lt;span&gt; are <b>inline</b> tags,
+        meaning their formatting is done within a line. &lt;p&gt; and &lt;div&gt; are <b>block</b> tags,
+        meaning that they form a block, or box of content.
+        &lt;span&gt; and &lt;div&gt; can also control the style of their content.
+        </p>
+      </div>
+      <div class="content">
+      <h3>Document Structure</h3>
+      <p>A basic HTML document has these components:<br>
+        <ul>
+          <li>Doctype &lt;!DOCTYPE HTML&gt;</li>
+          <li>HTML tags at the beginning and the end of the document</li>
+          <li>Head tags, which includes relevant metadata, CSS, and Javascript functions</li>
+          <li>Body tags, which contain the content of the document</li>
+        </ul>
+      <p>This class will mostly focus on the body of the document.</p>
+      </div>
+      <h1>Lesson 2: Creating a Structured Document</h1>
+      <div class="content">
+        <h2>General Page Structure</h2>
+        <p>A web page generally has a "tree-like structure," or hierarchy. 
+        A &lt;div&gt;, for example, can have within it &lt;h1&gt; and &lt;p&gt; tags,
+        which in turn can have text and tags within them. This is also called a <b>Document Object Model</b> (DOM).
+        </p>
+        <p>HTML is the language that controls the structure of the webpage. 
+        CSS is the language that controls the visual style of the page.
+        Different parts of the page, such as images, text, and headers, can be placed on the pages like boxes.
+        Putting things in boxes (by using the &lt;div&gt; tag), is the first step towards controlling the 
+        style of a page.
+        </p>
+      </div>
+        <h1>Lesson 3: Adding CSS Style and HTML Structure</h1>
+      <div class="content">
+        <h2>CSS Styling</h2>
+        <p>A typical CSS syntax looks like this: <b>selector {property: value;}</b><br>
+          A <b>selector</b> can be an HTML element, or a particular chosen part of the document, called a <b>class</b>.
+          A class name will have a dot in front of it, like this: .classname<br>
+          The part of the syntax in the curly braces is called a <b>declaration</b>. It has a <b>property</b>, which is
+          a particular style attribute, such as a color or a size, and a <b>value</b> for that attribute.
+        </p>
+         There are three ways to add CSS styling to an HTML page:<br>
+         <ol>
+           <li>Write CSS code in the head element of HTML. The element &lt;style&gt; is used.</li>
+           <li>Link to a separate CSS file. Within the head element of the HTML is a link to the file,
+           which will have this structure: <b>&lt;link rel="stylesheet" href="sheetname.css"&gt;</b></li>
+           <li>Write CSS inline within the HTML document within the &lt;div&gt; tags. This is not advised because it would result 
+           in repetitive coding, which could potentially cause problems when editing, and is generally a waste of time.</li>
+         </ol> 
+      </div>
+      <div class="content">
+        <h2>Box Sizing and Positioning</h2>
+        <p>
+          HTML elements are boxes with 4 components: margin, border, padding, and content. To better control the sizing
+          of a box, use percentages instead of pixels, and use <b>box-sizing: border-box</b>. You can also specify properties
+          for specific browsers by using the prefixes -moz (Firefox), -ms (Internet Explorer), or -webkit (other browsers).
+        </p>
+        <p>
+          &lt;div&gt; is a block element, which by default, takes up the whole width of a page. Using
+          <b>display: flex;</b> allows &lt;div&gt; elements to display side by side.
+        </p>
+      </div>
+      <div class="content">
+        <h2>Code, Test, Refine</h2>
+          Generally, create a page based on a design as follows:
+          <ol>
+            <li>Look for natural boxes (groupings)</li>
+            <li>Look for repeated styles and semantic elements</li>
+            <li>Write the HTML</li>
+            <li>Apply CSS styles</li>
+            <li>Repeat steps 3 and 4 until the page looks like the design</li>
+          </ol>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!-- This is an HTML comment. Comments allow you to communicate with other programmers using
+text that will be ignored by the computer! -->
+<!DOCTYPE html>
+<html lang="en"> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<head> <!-- The head tag includes important information about the page -->
+  <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+  This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+  You should include this line in the head of all of your webpages. -->
+  <title>IPND Lesson 1</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+</head>
+<body> <!-- The body tag is where the "flesh" of your HTML goes -->
+      <h1>Lesson 1: Getting Started with HTML</h1>
+    <div class="content">
+    <h2>World Wide Web Summary</h2>
+    <p>The World Wide Web (WWW) is a collection of documents that use <b>Hypertext Markup Language </b>(HTML).
+      Webpages are connected by <b>hyperlinks</b> (links).
+    Files can be found on the web include <em>HTML, plain text, images, videos,</em> and <em>music.</em>
+    </p>
+    <p>A web browser on a computer (such as Internet Explorer) sends a request to servers through the Internet,
+      using <b>Hypertext Transfer Protocol</b> (HTTP),
+    and the servers respond by sending files that can be viewed or played by the browser.</p>
+    </div>
+    <div class="content">
+    <h2>HTML</h2>
+      <h3>Basic Components</h3>
+      <p>HTML is made up of:<br>
+      <ul>
+        <li>Text content</li>
+        <li>Markup (formatting of the content)</li>
+        <li>References to other documents, such as images</li>
+        <li>Links to other pages</li>
+      </ul>
+      </div>
+      <div class="content">
+      <h3>Tags</h3>
+      <p>HTML markup uses tags, which are typically structured as <b>&lt;tagname&gt;content&lt;/tagname&gt;</b>.
+        The first tag is called an "opening tag,"
+      the second tag (with the slash) is called a "closing tag." The entire structure is called an element.
+      </p>
+      <!-- I used information from http://www.w3schools.com/charsets/ref_utf_punctuation.asp for displaying the angle brackets. -->
+      <p>Examples of tags with this structure are &lt;b&gt;<b>bold</b>&lt;/b&gt; and
+        &lt;em&gt;<em>emphasis (italic)</em>&lt;/em&gt;
+      </p>
+      <p>Tags can also have <b>attributes</b>, which equal some kind of value. The structure of a tag with an attribute is
+      <b>&lt;tagname attribute="value"&gt;content&lt;/tagname&gt;</b>
+      An example of a tag with an attribute is the <b>anchor tag</b> &lt;a&gt;,
+      which is used to create links. A tag like this one<br>
+      &lt;a href="http://www.ledorestaurant.com/"&gt;Pizza for lunch!&lt;/a&gt;
+      would display like this in the browser:<br>
+      <a href="http://www.ledorestaurant.com/">Pizza for lunch!</a>
+      </p>
+      <p>An <b>image tag</b> is an example of a <b>void tag</b>, in which the tag contains no content,
+        and thus does not need a closing tag.
+      An image tag also contains two attributes: src, whose value is the link to the image,
+      and alt, whose value is text that describes the image for
+      <a href="https://www.hhs.gov/web/section-508">Section 508 compliance</a>.
+      This tag &lt;img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Copo_de_nieve.png" alt="snowflake"&gt;
+      would display like this:<br>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Copo_de_nieve.png" alt="snowflake" height="50" width="50">
+      </p>
+      <!-- I shrunk the image to make it fit better on the page -->
+      <p>There are a number of tags that can group and format content:<br>
+        <ul>
+          <li>&lt;br&gt; break</li>
+          <li>&lt;p&gt; paragraph</li>
+          <li>&lt;span&gt; span</li>
+          <li>&lt;div&gt; div</li>
+        </ul>
+        <p>These tags all contain content, and therefore use closing tags.
+        &lt;br&gt; and &lt;span&gt; are <b>inline</b> tags,
+        meaning their formatting is done within a line. &lt;p&gt; and &lt;div&gt; are <b>block</b> tags,
+        meaning that they form a block, or box of content.
+        &lt;span&gt; and &lt;div&gt; can also control the style of their content.
+        </p>
+      </div>
+      <div class="content">
+      <h3>Document Structure</h3>
+      <p>A basic HTML document has these components:<br>
+        <ul>
+          <li>Doctype &lt;!DOCTYPE HTML&gt;</li>
+          <li>HTML tags at the beginning and the end of the document</li>
+          <li>Head tags, which includes relevant metadata, CSS, and Javascript functions</li>
+          <li>Body tags, which contain the content of the document</li>
+        </ul>
+      <p>This class will mostly focus on the body of the document.</p>
+      </div>
+      <div class="navigation">
+      <h4><a href="tableofcontents.html">Table of Contents</a></h4>
+      <h4><a href="lesson2.html">Lesson 2</a></h4>
+      </div>
+</body>
+</html>
